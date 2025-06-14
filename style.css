@@ -1,0 +1,43 @@
+  .imagen-redeonda {
+    width: 250px;           /* Ajuste conforme necessário */
+    height: 500px;          /* Certifique-se de que a altura e a largura sejam iguais */
+    border-radius: 50%;     /* Torna a imagem redonda */
+    object-fit: cover;      /* Garante que a imagem cubra a área sem distorcer */
+    display: block;         /* Remove qualquer possível espaçamento ao redor da imagem */
+}
+
+.imagem-redonda {
+    width: 100%; /* Controle o tamanho da imagem */
+    height: auto;
+    border-radius: 50%; /* Faz a imagem ficar redonda */
+    object-fit: cover; /* Garante que a imagem se ajuste corretamente dentro do espaço */
+}
+
+/* Galeria */
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.item-galeria {
+    width: calc(33% - 20px); /* Ajuste para 3 colunas */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.item-galeria a {
+    display: block;
+}
+
+.item-galeria img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.item-galeria header {
+    margin-top: 10px;
+    font-weight: bold;
+}
